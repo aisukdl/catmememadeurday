@@ -13,15 +13,23 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Cat</h1>
-      <h1>meme</h1>
-      <h1>will</h1>
-      <h1>made</h1>
-      <h1>your</h1>
-      <h1>day</h1>
-      <img src={pic} alt="" />
-      <br/>
-      <button onClick={randomCat}>GIMME ANOTHER!</button>
+      <div className="header">
+        <h1>Cat</h1>
+        <h1>meme</h1>
+        <h1>will</h1>
+        <h1>made</h1>
+        <h1>your</h1>
+        <h1>day</h1>
+      </div>
+      <div className="cat">
+        <img src={pic} alt="cat-meme" />
+      </div>
+      <div className="button">
+        <button onClick={randomCat}>GIMME ANOTHER!</button>
+      </div>
+      <div className="footer">
+        <p>Powered By GIPHY | &copy; Copyright 2020, aisukdl.</p>
+      </div>
     </div>
   );
 }

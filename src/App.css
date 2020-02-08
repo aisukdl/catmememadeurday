@@ -5,6 +5,8 @@
   min-height: 100vh;
   width: 100vw;
   position: absolute;
+  display: flex;
+  flex-direction: column;
 }
 
 h1 {
@@ -27,6 +29,15 @@ button {
 
 img {
   margin: 40px;
-  width: 80vw;
+  width: auto;
+  height: 100%;
   border: solid #fff 10px;
+}
+
+p{
+  font-family: 'Nanum Pen Script', cursive;
+}
+
+.button {
+  flex: 1;
 }
