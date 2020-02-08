@@ -8,7 +8,8 @@ function App() {
     fetch(`http://api.giphy.com/v1/gifs/random?api_key=${apikey}&tag=cat`)
       .then(res => res.json())
       .then(json => setPic(json.data.image_original_url))
-  }, []);
+  }
+  useEffect(randomCat, []);
 
   return (
     <div className="App">
@@ -20,7 +21,7 @@ function App() {
       <h1>day</h1>
       <img src={pic} alt="" />
       <br/>
-      <button>GIMME ANOTHER!</button>
+      <button onClick={randomCat}>GIMME ANOTHER!</button>
     </div>
   );
 }
