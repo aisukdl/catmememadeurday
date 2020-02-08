@@ -5,7 +5,7 @@ import apikey from './apiKey'
 function App() {
   const [pic, setPic] = useState();
   const randomCat = () => {
-    fetch(`http://api.giphy.com/v1/gifs/random?api_key=${apikey}&tag=cat`)
+    fetch(`https://api.giphy.com/v1/gifs/random?api_key=${apikey}&tag=cat`)
       .then(res => res.json())
       .then(json => setPic(json.data.image_original_url))
   }
