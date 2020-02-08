@@ -26,6 +26,10 @@ button {
   background-color: #fbd266;
 }
 
+button:hover {
+  background-color: #A23419;
+}
+
 img {
   margin: 40px;
   max-width: calc(100% - 100px);
