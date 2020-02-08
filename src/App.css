@@ -29,8 +29,8 @@ button {
 
 img {
   margin: 40px;
-  width: auto;
-  height: 100%;
+  max-width: calc(100% - 100px);
+  height: auto;
   border: solid #fff 10px;
 }
 
